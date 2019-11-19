@@ -1,6 +1,16 @@
 
 public class Grid {
 	private Coordinate grid[][];
+	/* will read these values in like we did in the c++ version:
+	   if( val == 'S'){
+       	Coordinate c(i, j, size, val, false);
+       	/********This is the change*******
+       	g.setStartCoordinate(c);
+        g.addCoordinate(c);
+       }
+
+		and then do the same if val == 'E' for the end tile
+	 */
 	private Coordinate startCoordinate;
 	private Coordinate endCoordinate;
 	
